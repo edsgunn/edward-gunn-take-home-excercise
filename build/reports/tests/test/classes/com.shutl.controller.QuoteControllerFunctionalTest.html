@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.178s</div>
+<div class="counter">0.182s</div>
 <p>duration</p>
 </div>
 </td>
@@ -89,7 +89,7 @@
 </tr>
 <tr>
 <td class="success">testVariablePricingByVehicle</td>
-<td class="success">0.160s</td>
+<td class="success">0.164s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,31 +97,31 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:51:24.746 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.shutl.controller.QuoteControllerFunctionalTest]
-16:51:24.753 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-16:51:24.757 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-16:51:24.767 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.shutl.controller.QuoteControllerFunctionalTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
-16:51:24.786 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@2912da17 declaringClass = 'com.shutl.controller.QuoteControllerFunctionalTest', classes = '{class com.shutl.Application}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
-16:51:24.790 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.shutl.controller.QuoteControllerFunctionalTest]: class path resource [com/shutl/controller/QuoteControllerFunctionalTest-context.xml] does not exist
-16:51:24.790 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.shutl.controller.QuoteControllerFunctionalTest]: class path resource [com/shutl/controller/QuoteControllerFunctionalTestContext.groovy] does not exist
-16:51:24.790 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.shutl.controller.QuoteControllerFunctionalTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:51:24.792 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.shutl.controller.QuoteControllerFunctionalTest]
-16:51:24.796 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [com.shutl.controller.QuoteControllerFunctionalTest]: using defaults.
-16:51:24.804 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-16:51:24.811 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-16:51:24.814 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
-16:51:24.815 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2620ef6d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1af14087, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b78b63f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7f4818bc]
-16:51:24.818 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shutl.controller.QuoteControllerFunctionalTest]
-16:51:24.819 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shutl.controller.QuoteControllerFunctionalTest]
-16:51:24.820 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shutl.controller.QuoteControllerFunctionalTest]
-16:51:24.820 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shutl.controller.QuoteControllerFunctionalTest]
-16:51:24.823 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@60303c59 testClass = QuoteControllerFunctionalTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4462498a testClass = QuoteControllerFunctionalTest, locations = '{}', classes = '{class com.shutl.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
-16:51:24.824 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shutl.controller.QuoteControllerFunctionalTest]
-16:51:24.824 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shutl.controller.QuoteControllerFunctionalTest]
-16:51:24.997 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-16:51:24.999 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-16:51:24.999 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-16:51:25.001 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+<pre>21:23:40.229 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.shutl.controller.QuoteControllerFunctionalTest]
+21:23:40.239 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:23:40.243 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:23:40.255 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.shutl.controller.QuoteControllerFunctionalTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+21:23:40.279 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@7b68706a declaringClass = 'com.shutl.controller.QuoteControllerFunctionalTest', classes = '{class com.shutl.Application}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+21:23:40.285 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.shutl.controller.QuoteControllerFunctionalTest]: class path resource [com/shutl/controller/QuoteControllerFunctionalTest-context.xml] does not exist
+21:23:40.286 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.shutl.controller.QuoteControllerFunctionalTest]: class path resource [com/shutl/controller/QuoteControllerFunctionalTestContext.groovy] does not exist
+21:23:40.286 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.shutl.controller.QuoteControllerFunctionalTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:23:40.288 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.shutl.controller.QuoteControllerFunctionalTest]
+21:23:40.292 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [com.shutl.controller.QuoteControllerFunctionalTest]: using defaults.
+21:23:40.298 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:23:40.304 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+21:23:40.305 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+21:23:40.310 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@632f8448, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2b50e799, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3aecce10, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e354232]
+21:23:40.314 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shutl.controller.QuoteControllerFunctionalTest]
+21:23:40.315 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shutl.controller.QuoteControllerFunctionalTest]
+21:23:40.316 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shutl.controller.QuoteControllerFunctionalTest]
+21:23:40.316 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shutl.controller.QuoteControllerFunctionalTest]
+21:23:40.320 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@cb94388 testClass = QuoteControllerFunctionalTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@63537b9f testClass = QuoteControllerFunctionalTest, locations = '{}', classes = '{class com.shutl.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+21:23:40.321 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.shutl.controller.QuoteControllerFunctionalTest]
+21:23:40.321 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.shutl.controller.QuoteControllerFunctionalTest]
+21:23:40.503 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:23:40.504 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:23:40.505 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:23:40.508 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -131,29 +131,29 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.3.3.RELEASE)
 
-2021-01-14 16:51:25.436  INFO 7296 --- [    Test worker] c.s.c.QuoteControllerFunctionalTest      : Starting QuoteControllerFunctionalTest on Edwards-MacBook-Pro.local with PID 7296 (/Users/edsgunn/Documents/GitHub/take_home_exercise_intern/build/classes/java/test started by edsgunn in /Users/edsgunn/Documents/GitHub/take_home_exercise_intern)
-2021-01-14 16:51:25.436  INFO 7296 --- [    Test worker] c.s.c.QuoteControllerFunctionalTest      : No active profile set, falling back to default profiles: default
-2021-01-14 16:51:25.478  INFO 7296 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@595eff09: startup date [Thu Jan 14 16:51:25 GMT 2021]; root of context hierarchy
-2021-01-14 16:51:25.986  INFO 7296 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
-2021-01-14 16:51:26.776  INFO 7296 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@595eff09: startup date [Thu Jan 14 16:51:25 GMT 2021]; root of context hierarchy
-2021-01-14 16:51:26.833  INFO 7296 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/quote],methods=[POST]}&quot; onto public com.shutl.model.Quote com.shutl.controller.QuoteController.quote(com.shutl.model.Quote)
-2021-01-14 16:51:26.836  INFO 7296 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2021-01-14 16:51:26.836  INFO 7296 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2021-01-14 16:51:26.839  INFO 7296 --- [    Test worker] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: ServletContext resource [/index.html]
-2021-01-14 16:51:26.854  INFO 7296 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
-2021-01-14 16:51:26.862  INFO 7296 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-14 16:51:26.863  INFO 7296 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-14 16:51:26.890  INFO 7296 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-14 16:51:26.977  INFO 7296 --- [    Test worker] c.s.c.QuoteControllerFunctionalTest      : Started QuoteControllerFunctionalTest in 1.966 seconds (JVM running for 2.742)
-2021-01-14 16:51:26.996  INFO 7296 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
-2021-01-14 16:51:26.996  INFO 7296 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2021-01-14 16:51:27.004  INFO 7296 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 8 ms
-2021-01-14 16:51:27.153  INFO 7296 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
-2021-01-14 16:51:27.154  INFO 7296 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2021-01-14 16:51:27.155  INFO 7296 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
-2021-01-14 16:51:27.162  INFO 7296 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
-2021-01-14 16:51:27.162  INFO 7296 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2021-01-14 16:51:27.163  INFO 7296 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2021-01-14 21:23:40.980  INFO 44815 --- [    Test worker] c.s.c.QuoteControllerFunctionalTest      : Starting QuoteControllerFunctionalTest on Edwards-MacBook-Pro.local with PID 44815 (/Users/edsgunn/Documents/GitHub/edward-gunn-take-home-excercise/build/classes/java/test started by edsgunn in /Users/edsgunn/Documents/GitHub/edward-gunn-take-home-excercise)
+2021-01-14 21:23:40.981  INFO 44815 --- [    Test worker] c.s.c.QuoteControllerFunctionalTest      : No active profile set, falling back to default profiles: default
+2021-01-14 21:23:41.074  INFO 44815 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@77f995ce: startup date [Thu Jan 14 21:23:41 GMT 2021]; root of context hierarchy
+2021-01-14 21:23:41.700  INFO 44815 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2021-01-14 21:23:42.583  INFO 44815 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@77f995ce: startup date [Thu Jan 14 21:23:41 GMT 2021]; root of context hierarchy
+2021-01-14 21:23:42.650  INFO 44815 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/quote],methods=[POST]}&quot; onto public com.shutl.model.Quote com.shutl.controller.QuoteController.quote(com.shutl.model.Quote)
+2021-01-14 21:23:42.653  INFO 44815 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-14 21:23:42.654  INFO 44815 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-14 21:23:42.659  INFO 44815 --- [    Test worker] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: ServletContext resource [/index.html]
+2021-01-14 21:23:42.672  INFO 44815 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2021-01-14 21:23:42.685  INFO 44815 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-14 21:23:42.685  INFO 44815 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-14 21:23:42.730  INFO 44815 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-14 21:23:42.853  INFO 44815 --- [    Test worker] c.s.c.QuoteControllerFunctionalTest      : Started QuoteControllerFunctionalTest in 2.335 seconds (JVM running for 3.387)
+2021-01-14 21:23:42.878  INFO 44815 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2021-01-14 21:23:42.878  INFO 44815 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2021-01-14 21:23:42.890  INFO 44815 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 11 ms
+2021-01-14 21:23:43.039  INFO 44815 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2021-01-14 21:23:43.039  INFO 44815 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2021-01-14 21:23:43.041  INFO 44815 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2021-01-14 21:23:43.047  INFO 44815 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2021-01-14 21:23:43.047  INFO 44815 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2021-01-14 21:23:43.048  INFO 44815 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
 </pre>
 </span>
 </div>
@@ -165,7 +165,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.4.1</a> at 14-Jan-2021 16:51:27</p>
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at 14-Jan-2021 21:23:43</p>
 </div>
 </div>
 </body>
