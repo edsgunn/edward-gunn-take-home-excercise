@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="switcher.js"></script>
+    </head>
+    <body>
+<section class="forms-section">
+    <h1 class="section-title">Quote Calculator</h1>
+    <div class="forms">
+      <div class="form-wrapper is-active">
+        <button type="button" onclick="switcher()" class="switcher switcher-calculator">
+          Calculator
+          <span class="underline"></span>
+        </button>
+        <form class="form form-calculator">
+          <fieldset>
+            <legend>Please, enter your Pickup Postcode, Delivery Postcode and Vehicle.</legend>
+            <div class="input-block">
+              <label for="pickup-postcode">Pickup Postcode</label>
+              <input id="pickup-postcode" type="postcode" required>
+            </div>
+            <div class="input-block">
+              <label for="delivery-postcode">Delivery Postcode</label>
+              <input id="delivery-postcode" type="postcode" required>
+            </div>
+            <div class="input-block">
+                <label for="delivery-vehicle">Delivery Vehicle</label>
+                <select id="delivery-vehicle" type="vehicle" required>
+                    <option value="bicycle">Bicycle</option>
+                    <option value="motorbike">Motorbike</option>
+                    <option value="parcel_car">Parcel Car</option>
+                    <option value="small_van">Small Van</option>
+                    <option value="large_van">Large Van</option>
+                </select>
+              </div>
+          </fieldset>
+          <button type="button" class="btn-calculator" onclick="requestPrice()">Submit</button>
+        </form>
+      </div>
+      <div class="form-wrapper">
+        <button type="button" onclick="switcher()" class="switcher switcher-quote">
+          Quote
+          <span class="underline"></span>
+        </button>
+        <form class="form form-quote">
+          <fieldset>
+            <div class="input-block">
+                <label id="quote-label">Fill in form to recieve quote</label>
+            </div>
+            <div class="input-block">
+                <center>
+                    <label id="price-label"></label>    
+                </center>          
+            </div>
+          </fieldset>
+          <button type="submit" class="btn-quote">Continue</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+  </html>
