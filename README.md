@@ -1,5 +1,5 @@
-###Edward Gunn Task Solution
-#Thoughts and assumptions
+### Edward Gunn Task Solution
+# Thoughts and assumptions
 ----------------------------------------------------------------
 I really enjoyed this task, I was a nice break from the usual leetcode style coding tests. 
 
